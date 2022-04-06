@@ -1,0 +1,13 @@
+micronaut:
+  application:
+    name: turbo
+  router:
+    static-resources:
+      default:
+        enabled: true
+        mapping: "/**"
+        paths: "classpath:assets"
+netty:
+  default:
+    allocator:
+      max-order: 3

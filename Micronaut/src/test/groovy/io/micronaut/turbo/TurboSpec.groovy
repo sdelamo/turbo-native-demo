@@ -1,4 +1,4 @@
-package io.micronaut
+package io.micronaut.turbo
 
 import io.micronaut.runtime.EmbeddedApplication
 import io.micronaut.test.extensions.spock.annotation.MicronautTest

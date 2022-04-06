@@ -12,6 +12,7 @@ group = "io.micronaut"
 
 val kotlinVersion=project.properties.get("kotlinVersion")
 repositories {
+    mavenLocal()
     mavenCentral()
 }
 
@@ -25,17 +26,16 @@ dependencies {
     implementation("jakarta.annotation:jakarta.annotation-api")
     implementation("org.jetbrains.kotlin:kotlin-reflect:${kotlinVersion}")
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8:${kotlinVersion}")
-    runtimeOnly("ch.qos.logback:logback-classic")
     implementation("io.micronaut:micronaut-validation")
 
+    runtimeOnly("ch.qos.logback:logback-classic")
     runtimeOnly("com.fasterxml.jackson.module:jackson-module-kotlin")
-
 }
-
 
 application {
     mainClass.set("io.micronaut.ApplicationKt")
 }
+
 java {
     sourceCompatibility = JavaVersion.toVersion("11")
 }
@@ -52,6 +52,7 @@ tasks {
         }
     }
 }
+
 graalvmNative.toolchainDetection.set(false)
 micronaut {
     runtime("netty")
