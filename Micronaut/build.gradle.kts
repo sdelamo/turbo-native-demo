@@ -16,6 +16,13 @@ repositories {
     mavenCentral()
 }
 
+// Until Turbo support is released
+configurations.all {
+    resolutionStrategy {
+        force("io.micronaut.views:micronaut-views-core:3.2.0-SNAPSHOT")
+    }
+}
+
 dependencies {
     kapt("io.micronaut:micronaut-http-validation")
     implementation("io.micronaut:micronaut-http-client")
