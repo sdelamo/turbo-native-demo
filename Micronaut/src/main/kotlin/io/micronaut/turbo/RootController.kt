@@ -13,5 +13,5 @@ class RootController {
     @View("index")
     @TurboView("index")
     @Get(produces = [MediaType.TEXT_HTML], consumes = [MediaType.TEXT_HTML])
-    fun index() = ViewModel(pageTitle = "Index")
+    fun index() = ViewModel("Turbo Native Demo", pageClass = "index")
 }

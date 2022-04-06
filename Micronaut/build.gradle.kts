@@ -40,7 +40,7 @@ dependencies {
 }
 
 application {
-    mainClass.set("io.micronaut.ApplicationKt")
+    mainClass.set("io.micronaut.turbo.ApplicationKt")
 }
 
 java {

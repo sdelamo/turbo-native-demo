@@ -1,9 +1,10 @@
+<!DOCTYPE HTML>
 <html lang="en" th:replace="~{layoutFile :: layout(~{::title}, ~{::section})}" xmlns:th="http://www.thymeleaf.org">
 <head>
     <title th:text="${pageTitle}"></title>
 </head>
 <body>
-<section>
+<section class="grid">
     <h1 class="page-title">How’d You Get Here?</h1>
     <p>When you tap the link to this page, Turbo proposes a visit to the app to decide how to handle the URL. In this case, it chooses to present a Turbo-based web screen.</p>
     <p>Go back and try <em>Intercept with a native view</em> to see how to load a native screen instead.</p>
