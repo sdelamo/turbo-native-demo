@@ -12,7 +12,6 @@ import java.util.concurrent.CompletableFuture
 class SlowController {
 
     @View("slow")
-    @TurboView("slow")
     @Get(produces = [MediaType.TEXT_HTML], consumes = [MediaType.TEXT_HTML])
     fun index(): ViewModel = CompletableFuture.supplyAsync {
         Thread.sleep(3000)

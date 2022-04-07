@@ -12,7 +12,6 @@ import io.micronaut.views.turbo.TurboView
 class TwoController {
 
     @View("two")
-    @TurboView("two")
     @Get(produces = [MediaType.TEXT_HTML], consumes = [MediaType.TEXT_HTML])
     fun index(@QueryValue action: String?) = ViewModel("Push or Replace?", action = action)
 }

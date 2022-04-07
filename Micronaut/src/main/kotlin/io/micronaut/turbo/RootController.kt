@@ -11,7 +11,6 @@ import io.micronaut.views.turbo.TurboView
 class RootController {
 
     @View("index")
-    @TurboView("index")
     @Get(produces = [MediaType.TEXT_HTML], consumes = [MediaType.TEXT_HTML])
     fun index() = ViewModel("Turbo Native Demo", pageClass = "index")
 }

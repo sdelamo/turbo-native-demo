@@ -11,7 +11,6 @@ import io.micronaut.views.turbo.TurboView
 class OneController {
 
     @View("one")
-    @TurboView("one")
     @Get(produces = [MediaType.TEXT_HTML], consumes = [MediaType.TEXT_HTML])
     fun index() = ViewModel("How’d You Get Here?")
 }

@@ -11,7 +11,6 @@ import io.micronaut.views.turbo.TurboView
 class ScrollController {
 
     @View("scroll")
-    @TurboView("scroll")
     @Get(produces = [MediaType.TEXT_HTML], consumes = [MediaType.TEXT_HTML])
     fun index() = ViewModel("Restoring Your Scroll")
 }
