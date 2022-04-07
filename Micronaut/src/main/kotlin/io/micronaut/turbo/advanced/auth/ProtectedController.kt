@@ -1,4 +1,4 @@
-package io.micronaut.turbo.auth
+package io.micronaut.turbo.advanced.auth
 
 import io.micronaut.http.HttpResponse
 import io.micronaut.http.HttpStatus

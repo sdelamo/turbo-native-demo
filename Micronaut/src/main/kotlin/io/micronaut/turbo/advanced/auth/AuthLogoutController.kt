@@ -1,4 +1,4 @@
-package io.micronaut.turbo.auth
+package io.micronaut.turbo.advanced.auth
 
 import io.micronaut.context.annotation.Replaces
 import io.micronaut.context.event.ApplicationEvent
