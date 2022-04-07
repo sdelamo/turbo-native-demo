@@ -19,7 +19,7 @@ repositories {
 // Until Turbo support is released
 configurations.all {
     resolutionStrategy {
-        force("io.micronaut.views:micronaut-views-core:3.2.0-SNAPSHOT")
+//        force("io.micronaut.views:micronaut-views-core:3.2.0-SNAPSHOT")
     }
 }
 
@@ -60,6 +60,9 @@ tasks {
         kotlinOptions {
             jvmTarget = "11"
         }
+    }
+    register("stage") {
+        dependsOn("shadowJar")
     }
 }
 

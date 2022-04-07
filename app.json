@@ -1,0 +1,5 @@
+{
+  "name": "Turbo native backend in Micronaut",
+  "description": "A test of Micronaut with Turbo native.",
+  "image": "heroku/gradle"
+}
