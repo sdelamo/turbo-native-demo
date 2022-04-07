@@ -1,9 +1,5 @@
 <!DOCTYPE HTML>
-<html lang="en" th:replace="~{layoutFile :: layout(~{::title}, ~{::section})}" xmlns:th="http://www.thymeleaf.org">
-<head>
-    <title th:text="${pageTitle}"></title>
-</head>
-<body>
+<html lang="en" th:replace="~{layoutFile :: layout(~{::section})}" xmlns:th="http://www.thymeleaf.org">
 <section class="grid">
     <h1 class="page-title display-native --turbo-native">
         <div class="actions__icon --turbo-native" aria-hidden="true"></div>
@@ -30,5 +26,4 @@
         <a href="https://turbo.hotwired.dev/handbook/native" target="_blank" class="button">Go Native on iOS & Android</a>
     </p>
 </section>
-</body>
 </html>

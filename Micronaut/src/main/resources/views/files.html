@@ -1,9 +1,5 @@
 <!DOCTYPE HTML>
-<html lang="en" th:replace="~{layoutFile :: layout(~{::title}, ~{::section})}" xmlns:th="http://www.thymeleaf.org">
-<head>
-    <title th:text="${pageTitle}"></title>
-</head>
-<body>
+<html lang="en" th:replace="~{layoutFile :: layout(~{::section})}" xmlns:th="http://www.thymeleaf.org">
 <section class="grid">
     <h1 class="page-title">Handling Files</h1>
 
@@ -21,5 +17,4 @@
         </small>
     </p>
 </section>
-</body>
 </html>

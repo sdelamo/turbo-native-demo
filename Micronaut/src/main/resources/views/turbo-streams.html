@@ -1,9 +1,5 @@
 <!DOCTYPE HTML>
-<html lang="en" th:replace="~{layoutFile :: layout(~{::title}, ~{::section})}" xmlns:th="http://www.thymeleaf.org">
-<head>
-    <title th:text="${pageTitle}"></title>
-</head>
-<body>
+<html lang="en" th:replace="~{layoutFile :: layout(~{::section})}" xmlns:th="http://www.thymeleaf.org">
 <section class="grid">
     <h1 class="page-title display-native --turbo-streams">
         <div class="actions__icon --turbo-streams" aria-hidden="true"></div>
@@ -38,5 +34,4 @@
         <a href="https://turbo.hotwired.dev/handbook/streams" target="_blank" class="button">Come Alive with Turbo Streams</a>
     </p>
 </section>
-</body>
 </html>

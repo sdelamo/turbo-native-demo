@@ -1,9 +1,5 @@
 <!DOCTYPE HTML>
-<html lang="en" th:replace="~{layoutFile :: layout(~{::title}, ~{::section})}" xmlns:th="http://www.thymeleaf.org">
-<head>
-    <title th:text="${pageTitle}"></title>
-</head>
-<body>
+<html lang="en" th:replace="~{layoutFile :: layout(~{::section})}" xmlns:th="http://www.thymeleaf.org">
 <section class="grid">
     <h2 class="actions__header space --top-l">Reference</h2>
 
@@ -30,5 +26,4 @@
         </a>
     </div>
 </section>
-</body>
 </html>
