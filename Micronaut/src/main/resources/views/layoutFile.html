@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html th:fragment="layout (title, content)" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title th:replace="${title}">Layout Title</title>
+    <link rel="stylesheet" href="/base.css">
+    <link rel="stylesheet" href="/utilities.css">
+    <link rel="stylesheet" href="/app.css">
+    <script src="/turbolinks-7.0.0.js"></script>
+</head>
+<body class="" th:classappend="${pageClass}">
+<main id="content" class="grid pad --bottom-soft">
+    <div class="grid" th:replace="${content}">
+    </div>
+    <footer class="text --size-s --color-subtle space --top-xxl">
+        Rendered <span th:text="${renderDate}"></span> via Turbolinks 7
+    </footer>
+</main>
+</body>
+</html>

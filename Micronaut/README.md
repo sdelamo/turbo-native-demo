@@ -1,21 +1,12 @@
-## Micronaut 3.4.1 Documentation
+Checkout the `turbo` branch of `micronaut-views`, and run:
 
-- [User Guide](https://docs.micronaut.io/3.4.1/guide/index.html)
-- [API Reference](https://docs.micronaut.io/3.4.1/api/index.html)
-- [Configuration Reference](https://docs.micronaut.io/3.4.1/guide/configurationreference.html)
-- [Micronaut Guides](https://guides.micronaut.io/index.html)
----
+```shell
+./gradlew pTML
+```
 
-- [Shadow Gradle Plugin](https://plugins.gradle.org/plugin/com.github.johnrengelman.shadow)
-## Feature views-thymeleaf documentation
+To publish it to maven local.
 
-- [Micronaut Thymeleaf Views documentation](https://micronaut-projects.github.io/micronaut-views/latest/guide/index.html#thymeleaf)
+If the version has changed, you'll need to update the snapshot version in the build script.
 
-- [https://www.thymeleaf.org/](https://www.thymeleaf.org/)
-
-
-## Feature http-client documentation
-
-- [Micronaut HTTP Client documentation](https://docs.micronaut.io/latest/guide/index.html#httpClient)
 
 
