@@ -1,16 +1,15 @@
-package io.micronaut.turbo
+package io.micronaut.turbo.advanced.auth
 
 import io.micronaut.http.MediaType
 import io.micronaut.http.annotation.Controller
 import io.micronaut.http.annotation.Get
 import io.micronaut.turbo.model.ViewModel
 import io.micronaut.views.View
-import java.security.Principal
 
-@Controller
-class RootController {
+@Controller("/signin")
+class SignInController {
 
-    @View("index")
+    @View("signin")
     @Get(produces = [MediaType.TEXT_HTML], consumes = [MediaType.TEXT_HTML])
-    fun index(principal: Principal?) = ViewModel("Turbo Native Demo", pageClass = "index", principal = principal)
+    fun index() = ViewModel("Sign In")
 }
