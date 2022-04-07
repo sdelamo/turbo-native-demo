@@ -9,7 +9,6 @@ import io.micronaut.http.annotation.Post
 import io.micronaut.turbo.model.ViewModel
 import io.micronaut.views.View
 import io.netty.handler.codec.http.HttpHeaderNames
-import java.net.URI
 
 @Controller("/new")
 class ModalController {
