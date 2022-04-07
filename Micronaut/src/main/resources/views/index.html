@@ -5,6 +5,13 @@
 </head>
 <body>
 <section class="grid">
+    <div th:if="${principal != null}">
+        <form action="/signout" method="post" class="auth grid__item --start-2 --span-10 space --bottom-m">
+            👋 Hey <span th:text="${principal.name}"></span>!
+            <button class="auth__signout" type="submit">Sign Out</button>
+        </form>
+    </div>
+
     <h1 class="page-title space --top-s">Turbo Native Demo</h1>
     <p class="space --ends-flush">This demo app will help you get acquainted with the framework.</p>
 
