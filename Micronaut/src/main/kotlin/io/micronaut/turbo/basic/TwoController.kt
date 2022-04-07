@@ -6,7 +6,6 @@ import io.micronaut.http.annotation.Get
 import io.micronaut.http.annotation.QueryValue
 import io.micronaut.turbo.model.ViewModel
 import io.micronaut.views.View
-import io.micronaut.views.turbo.TurboView
 
 @Controller("/two")
 class TwoController {
