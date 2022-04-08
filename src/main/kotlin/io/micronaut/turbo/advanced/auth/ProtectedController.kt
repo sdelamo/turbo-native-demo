@@ -15,7 +15,7 @@ class ProtectedController {
     @Get(produces = [MediaType.TEXT_HTML], consumes = [MediaType.TEXT_HTML])
     fun index(principal: Principal?): HttpResponse<*> {
         if (principal == null) {
-            return HttpResponse.status<Any>(HttpStatus.UNAUTHORIZED).body("401 Unauthorized")
+            return HttpResponse.status<Any>(HttpStatus.UNAUTHORIZED).body("Unauthorized")
         } else {
             return HttpResponse.ok(ModelAndView("protected", ViewModel("Protected Webpage")))
         }
